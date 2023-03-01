@@ -1,0 +1,98 @@
+import 'package:colorahtzee/game_settings.dart';
+
+class DiceImages {
+  static const Map<GameColors, List<String>> _images = {
+    GameColors.blue: [
+      'assets/images/dice/die_0.png',
+      'assets/images/dice/die_blue_1.png',
+      'assets/images/dice/die_blue_2.png',
+      'assets/images/dice/die_blue_3.png',
+      'assets/images/dice/die_blue_4.png',
+      'assets/images/dice/die_blue_5.png',
+      'assets/images/dice/die_blue_6.png',
+      'assets/images/dice/die_7.png',
+      'assets/images/dice/die_blue.png',
+    ],
+    GameColors.green: [
+      'assets/images/dice/die_0.png',
+      'assets/images/dice/die_green_1.png',
+      'assets/images/dice/die_green_2.png',
+      'assets/images/dice/die_green_3.png',
+      'assets/images/dice/die_green_4.png',
+      'assets/images/dice/die_green_5.png',
+      'assets/images/dice/die_green_6.png',
+      'assets/images/dice/die_7.png',
+      'assets/images/dice/die_green.png',
+    ],
+    GameColors.orange: [
+      'assets/images/dice/die_0.png',
+      'assets/images/dice/die_orange_1.png',
+      'assets/images/dice/die_orange_2.png',
+      'assets/images/dice/die_orange_3.png',
+      'assets/images/dice/die_orange_4.png',
+      'assets/images/dice/die_orange_5.png',
+      'assets/images/dice/die_orange_6.png',
+      'assets/images/dice/die_7.png',
+      'assets/images/dice/die_orange.png',
+    ],
+    GameColors.pink: [
+      'assets/images/dice/die_0.png',
+      'assets/images/dice/die_pink_1.png',
+      'assets/images/dice/die_pink_2.png',
+      'assets/images/dice/die_pink_3.png',
+      'assets/images/dice/die_pink_4.png',
+      'assets/images/dice/die_pink_5.png',
+      'assets/images/dice/die_pink_6.png',
+      'assets/images/dice/die_7.png',
+      'assets/images/dice/die_pink.png',
+    ],
+    GameColors.purple: [
+      'assets/images/dice/die_0.png',
+      'assets/images/dice/die_purple_1.png',
+      'assets/images/dice/die_purple_2.png',
+      'assets/images/dice/die_purple_3.png',
+      'assets/images/dice/die_purple_4.png',
+      'assets/images/dice/die_purple_5.png',
+      'assets/images/dice/die_purple_6.png',
+      'assets/images/dice/die_7.png',
+      'assets/images/dice/die_purple.png',
+    ],
+    GameColors.red: [
+      'assets/images/dice/die_0.png',
+      'assets/images/dice/die_red_1.png',
+      'assets/images/dice/die_red_2.png',
+      'assets/images/dice/die_red_3.png',
+      'assets/images/dice/die_red_4.png',
+      'assets/images/dice/die_red_5.png',
+      'assets/images/dice/die_red_6.png',
+      'assets/images/dice/die_7.png',
+      'assets/images/dice/die_red.png',
+    ],
+    GameColors.white: [
+      'assets/images/dice/die_0.png',
+      'assets/images/dice/die_white_1.png',
+      'assets/images/dice/die_white_2.png',
+      'assets/images/dice/die_white_3.png',
+      'assets/images/dice/die_white_4.png',
+      'assets/images/dice/die_white_5.png',
+      'assets/images/dice/die_white_6.png',
+      'assets/images/dice/die_7.png',
+      'assets/images/dice/die_white.png',
+    ],
+    GameColors.yellow: [
+      'assets/images/dice/die_0.png',
+      'assets/images/dice/die_yellow_1.png',
+      'assets/images/dice/die_yellow_2.png',
+      'assets/images/dice/die_yellow_3.png',
+      'assets/images/dice/die_yellow_4.png',
+      'assets/images/dice/die_yellow_5.png',
+      'assets/images/dice/die_yellow_6.png',
+      'assets/images/dice/die_7.png',
+      'assets/images/dice/die_yellow.png',
+    ],
+  };
+
+  static getImage({required GameColors color, required int value}) {
+    return _images[color]![value];
+  }
+}
